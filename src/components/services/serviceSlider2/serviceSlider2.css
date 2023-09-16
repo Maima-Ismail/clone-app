@@ -1,0 +1,50 @@
+@media (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .first {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .passage {
+    display: none;
+  }
+  .heading {
+    display: block;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  #h1 {
+    font-size: 2.5rem;
+    margin: 0.7rem 1rem;
+  }
+  #h2 {
+    font-weight: bolder;
+    font-size: 3.875rem;
+    margin: 0.7rem 1rem;
+  }
+  #h3 {
+    font-size: 2.5rem;
+    margin: 0.7rem 1rem;
+    line-height: 3rem;
+  }
+  .second {
+    margin: 1rem;
+    text-align: center;
+  }
+  .second img {
+    margin: 2rem 0rem;
+    display: inline-block;
+    width: 350px;
+  }
+  .second p {
+    text-align: left;
+    font-size: 1.65rem;
+    line-height: 3rem;
+  }
+  hr {
+    width: 100%;
+  }
+}
