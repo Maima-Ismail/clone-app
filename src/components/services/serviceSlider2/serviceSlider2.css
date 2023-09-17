@@ -21,7 +21,7 @@
   display: inline-block;
 }
 hr {
-  width: 100%;
+  width: 98.5vw;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
   .passage {
