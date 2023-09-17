@@ -11,9 +11,8 @@
     display: none;
   }
   .heading {
-    display: block;
     min-width: 200px;
-    max-width: 350px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -21,21 +20,23 @@
   #h1 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 2% 10%;
+    padding: 0.5rem 10%;
+    box-sizing: border-box;
   }
   #h2 {
-    box-sizing: border-box;
     font-weight: bolder;
     margin: 0;
     font-size: 2.25rem;
-    padding: 2% 10%;
+    padding: 0.5rem 10%;
     line-height: 3rem;
+    box-sizing: border-box;
   }
   #h3 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 2% 10%;
+    padding: 0.5rem 10%;
     line-height: 2rem;
+    box-sizing: border-box;
   }
 
   .second img {
@@ -45,11 +46,18 @@
   }
   .second p {
     text-align: left;
-    padding: 2% 4%;
+    padding: 0.5rem 4%;
     font-size: 1.25rem;
     line-height: 2rem;
   }
   hr {
     width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 640px) {
+  #h1,
+  #h2,
+  #h3 {
+    padding: 0.5rem 5%;
   }
 }
