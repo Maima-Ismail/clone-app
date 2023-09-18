@@ -21,7 +21,7 @@ const ServiceSlider2 = () => {
           </div>
         </div>
         <div className="second">
-          <img src={ecommerce} alt="service2" />
+          <img src={ecommerce} alt="Service2" />
           <p>
             Our experts can help you create an online storefront that's easy to
             use, efficient, and competitive. We specialize in product listing

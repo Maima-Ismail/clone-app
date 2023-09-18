@@ -1,23 +1,23 @@
-.container {
+#container {
   display: flex;
   flex-flow: column wrap;
 }
-.first {
+#first {
   display: flex;
   flex-flow: column wrap;
-}
-.heading {
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
 }
-#h1,
-#h2,
-#h3 {
+#heading {
+  display: flex;
+  flex-direction: column;
+}
+#heading1,
+#heading2,
+#heading3 {
   margin: 0;
   box-sizing: border-box;
 }
-.second img {
+#second img {
   display: inline-block;
 }
 hr {
@@ -25,34 +25,31 @@ hr {
   margin-top: 20%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
-  .passage {
-    display: none;
-  }
-  .heading {
+  #heading {
     min-width: 200px;
     max-width: 320px;
   }
-  #h1 {
+  #heading1 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
   }
-  #h2 {
+  #heading2 {
     font-weight: bolder;
     font-size: 2.25rem;
     padding: 0.5rem 10%;
     line-height: 3rem;
   }
-  #h3 {
+  #heading3 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
     line-height: 2rem;
   }
 
-  .second img {
+  #second img {
     margin: 2rem 0rem 2rem 5rem;
-    width: 250px;
+    width: 350px;
   }
-  .second p {
+  #second p {
     text-align: left;
     padding: 0.5rem 4%;
     font-size: 1.25rem;
@@ -60,63 +57,57 @@ hr {
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
-  #h1,
-  #h2,
-  #h3 {
+  #heading1,
+  #heading2,
+  #heading3 {
     padding: 0.5rem 5%;
   }
 }
 @media (min-width: 1025px) {
-  .container {
+  #container {
     flex-flow: row wrap;
   }
-  .first {
+  #first {
     flex: 1;
     margin-left: 10%;
+    justify-content: center;
   }
-  .second {
+  #second {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
     justify-content: end;
     align-items: center;
+    margin: 0rem 5rem;
   }
-  .passage {
-    font-weight: bold;
-    text-align: left;
-    padding: 0.5rem 0%;
-    margin-bottom: 35%;
-    font-size: 1rem;
-    line-height: 2rem;
-  }
-  .heading {
-    min-width: 250px;
+  #heading {
+    min-width: 200px;
     max-width: 450px;
   }
-  #h1 {
-    font-size: 2.25rem;
+  #heading1 {
+    font-size: 2.5rem;
     padding: 0.5rem 0%;
   }
-  #h2 {
+  #heading2 {
     font-weight: bolder;
     font-size: 3rem;
     padding: 0.5rem 0%;
-    line-height: 4rem;
+    line-height: 4.25rem;
   }
-  #h3 {
-    font-size: 2.25rem;
+  #heading3 {
+    font-size: 2.5rem;
     padding: 0.5rem 0%;
-    line-height: 3rem;
+    line-height: 3.5rem;
   }
 
-  .second img {
-    margin: 23rem 0rem 5rem 5rem;
-    width: 500px;
+  #second img {
+    margin: 12% 0rem 5rem 0rem;
+    width: 80%;
   }
-  .second p {
+  #second p {
     font-weight: bold;
     text-align: left;
-    padding: 0.5rem 4% 0.5rem 20%;
+    padding: 0.5rem 5%;
     font-size: 1rem;
     line-height: 2rem;
   }
