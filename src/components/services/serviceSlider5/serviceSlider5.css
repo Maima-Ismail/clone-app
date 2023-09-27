@@ -45,9 +45,11 @@ hr {
     min-width: 200px;
     max-width: 320px;
   }
-
+  #rightDiv {
+    text-align: center;
+  }
   #rightDiv img {
-    margin: 2rem 0rem 2rem 5rem;
+    margin: 2rem 0rem;
     width: 300px;
   }
   #rightDiv p {

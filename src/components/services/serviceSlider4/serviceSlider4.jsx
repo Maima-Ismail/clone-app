@@ -4,17 +4,17 @@ const ServiceSlider4 = () => {
   return (
     <>
       <hr />
-      <div id="box">
-        <div id="left">
-          <div id="headingDiv">
-            <p id="head1">We Offer</p>
-            <p id="head2">Quality Engineer & Testing</p>
-            <p id="head3">
+      <div id="slide4-container">
+        <div id="slide4-first">
+          <div id="slide4-heading">
+            <p id="slide4-h1">We Offer</p>
+            <p id="slide4-h2">Quality Engineer & Testing</p>
+            <p id="slide4-h3">
               For your web, desktop, mobile, and cloud based applications.
             </p>
           </div>
         </div>
-        <div id="right">
+        <div id="slide4-second">
           <img src={quality} alt="Service4" />
           <p>
             Groltech develops custom software for small to medium-sized

@@ -44,9 +44,11 @@ hr {
     padding: 0.5rem 10%;
     line-height: 2rem;
   }
-
+  #slide7-second {
+    text-align: center;
+  }
   #slide7-second img {
-    margin: 2rem 0rem 2rem 5rem;
+    margin: 2rem 0rem;
     width: 350px;
   }
   #slide7-second p {
@@ -102,13 +104,13 @@ hr {
   }
 
   #slide7-second img {
-    margin: 30rem 0rem 5rem 0rem;
+    margin: 20rem 0rem 5rem 0rem;
     width: 60%;
   }
   #slide7-second p {
     font-weight: bold;
     text-align: left;
-    padding: 0.5rem 5% 8rem 10%;
+    padding: 0.5rem 5% 0rem 10%;
     font-size: 1rem;
     line-height: 2rem;
   }

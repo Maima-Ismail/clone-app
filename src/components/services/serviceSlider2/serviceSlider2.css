@@ -1,23 +1,23 @@
-.container {
+.slide2-container {
   display: flex;
   flex-flow: column wrap;
 }
-.first {
+.slide2-first {
   display: flex;
   flex-flow: column wrap;
 }
-.heading {
+.slide2-heading {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-#h1,
-#h2,
-#h3 {
+#slide2-h1,
+#slide2-h2,
+#slide2-h3 {
   margin: 0;
   box-sizing: border-box;
 }
-.second img {
+.slide2-second img {
   display: inline-block;
 }
 hr {
@@ -25,34 +25,36 @@ hr {
   margin-top: 20%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
-  .passage {
+  .slide2-passage {
     display: none;
   }
-  .heading {
+  .slide2-heading {
     min-width: 200px;
     max-width: 320px;
   }
-  #h1 {
+  #slide2-h1 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
   }
-  #h2 {
+  #slide2-h2 {
     font-weight: bolder;
     font-size: 2.25rem;
     padding: 0.5rem 10%;
     line-height: 3rem;
   }
-  #h3 {
+  #slide2-h3 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
     line-height: 2rem;
   }
-
-  .second img {
-    margin: 2rem 0rem 2rem 5rem;
+  .slide2-second {
+    text-align: center;
+  }
+  .slide2-second img {
+    margin: 2rem 0rem;
     width: 250px;
   }
-  .second p {
+  .slide2-second p {
     text-align: left;
     padding: 0.5rem 4%;
     font-size: 1.25rem;
@@ -60,28 +62,28 @@ hr {
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
-  #h1,
-  #h2,
-  #h3 {
+  #slide2-h1,
+  #slide2-h2,
+  #slide2-h3 {
     padding: 0.5rem 5%;
   }
 }
 @media (min-width: 1025px) {
-  .container {
+  .slide2-container {
     flex-flow: row wrap;
   }
-  .first {
+  .slide2-first {
     flex: 1;
     margin-left: 10%;
   }
-  .second {
+  .slide2-second {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
     justify-content: end;
     align-items: center;
   }
-  .passage {
+  .slide2-passage {
     font-weight: bold;
     text-align: left;
     padding: 0.5rem 0%;
@@ -89,31 +91,31 @@ hr {
     font-size: 1rem;
     line-height: 2rem;
   }
-  .heading {
+  .slide2-heading {
     min-width: 250px;
     max-width: 450px;
   }
-  #h1 {
+  #slide2-h1 {
     font-size: 2.25rem;
     padding: 0.5rem 0%;
   }
-  #h2 {
+  #slide2-h2 {
     font-weight: bolder;
     font-size: 3rem;
     padding: 0.5rem 0%;
     line-height: 4rem;
   }
-  #h3 {
+  #slide2-h3 {
     font-size: 2.25rem;
     padding: 0.5rem 0%;
     line-height: 3rem;
   }
 
-  .second img {
+  .slide2-second img {
     margin: 23rem 0rem 5rem 5rem;
     width: 500px;
   }
-  .second p {
+  .slide2-second p {
     font-weight: bold;
     text-align: left;
     padding: 0.5rem 4% 0.5rem 20%;

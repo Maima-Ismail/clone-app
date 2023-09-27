@@ -1,23 +1,23 @@
-#container {
+#slide3-container {
   display: flex;
   flex-flow: column wrap;
 }
-#first {
+#slide3-first {
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
 }
-#heading {
+#slide3-heading {
   display: flex;
   flex-direction: column;
 }
-#heading1,
-#heading2,
-#heading3 {
+#slide3-h1,
+#slide3-h2,
+#slide3-h3 {
   margin: 0;
   box-sizing: border-box;
 }
-#second img {
+#slide3-second img {
   display: inline-block;
 }
 hr {
@@ -25,31 +25,33 @@ hr {
   margin-top: 20%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
-  #heading {
+  #slide3-heading {
     min-width: 200px;
     max-width: 320px;
   }
-  #heading1 {
+  #slide3-h1 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
   }
-  #heading2 {
+  #slide3-h2 {
     font-weight: bolder;
     font-size: 2.25rem;
     padding: 0.5rem 10%;
     line-height: 3rem;
   }
-  #heading3 {
+  #slide3-h3 {
     font-size: 1.25rem;
     padding: 0.5rem 10%;
     line-height: 2rem;
   }
-
-  #second img {
-    margin: 2rem 0rem 2rem 5rem;
+  #slide3-second {
+    text-align: center;
+  }
+  #slide3-second img {
+    margin: 2rem 0rem;
     width: 350px;
   }
-  #second p {
+  #slide3-second p {
     text-align: left;
     padding: 0.5rem 4%;
     font-size: 1.25rem;
@@ -57,22 +59,22 @@ hr {
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
-  #heading1,
-  #heading2,
-  #heading3 {
+  #slide3-h1,
+  #slide3-h2,
+  #slide3-h3 {
     padding: 0.5rem 5%;
   }
 }
 @media (min-width: 1025px) {
-  #container {
+  #slide3-container {
     flex-flow: row wrap;
   }
-  #first {
+  #slide3-first {
     flex: 1;
     margin-left: 10%;
     justify-content: center;
   }
-  #second {
+  #slide3-second {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
@@ -80,31 +82,31 @@ hr {
     align-items: center;
     margin: 0rem 5rem;
   }
-  #heading {
+  #slide3-heading {
     min-width: 200px;
     max-width: 450px;
   }
-  #heading1 {
+  #slide3-h1 {
     font-size: 2.5rem;
     padding: 0.5rem 0%;
   }
-  #heading2 {
+  #slide3-h2 {
     font-weight: bolder;
     font-size: 3rem;
     padding: 0.5rem 0%;
     line-height: 4.25rem;
   }
-  #heading3 {
+  #slide3-h3 {
     font-size: 2.5rem;
     padding: 0.5rem 0%;
     line-height: 3.5rem;
   }
 
-  #second img {
+  #slide3-second img {
     margin: 12% 0rem 5rem 0rem;
     width: 80%;
   }
-  #second p {
+  #slide3-second p {
     font-weight: bold;
     text-align: left;
     padding: 0.5rem 5%;

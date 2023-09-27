@@ -44,9 +44,11 @@ hr {
     padding: 0.5rem 10%;
     line-height: 2rem;
   }
-
+  #slide8-second {
+    text-align: center;
+  }
   #slide8-second img {
-    margin: 2rem 0rem 1rem 5rem;
+    margin: 2rem 0rem;
     width: 350px;
   }
   #slide8-container > p {

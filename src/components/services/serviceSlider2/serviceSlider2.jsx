@@ -4,9 +4,9 @@ const ServiceSlider2 = () => {
   return (
     <>
       <hr />
-      <div className="container">
-        <div className="first">
-          <div className="passage">
+      <div className="slide2-container">
+        <div className="slide2-first">
+          <div className="slide2-passage">
             <p>
               Groltech develops custom software for small to medium-sized
               businesses and enterprises. We offer service like software
@@ -14,13 +14,13 @@ const ServiceSlider2 = () => {
               business and technological objectives.
             </p>
           </div>
-          <div className="heading">
-            <p id="h1">We provide</p>
-            <p id="h2">E-commerce Solutions</p>
-            <p id="h3">Which helps your business to flourish online.</p>
+          <div className="slide2-heading">
+            <p id="slide2-h1">We provide</p>
+            <p id="slide2-h2">E-commerce Solutions</p>
+            <p id="slide2-h3">Which helps your business to flourish online.</p>
           </div>
         </div>
-        <div className="second">
+        <div className="slied2-second">
           <img src={ecommerce} alt="Service2" />
           <p>
             Our experts can help you create an online storefront that's easy to
