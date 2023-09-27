@@ -20,7 +20,7 @@ const ServiceSlider2 = () => {
             <p id="slide2-h3">Which helps your business to flourish online.</p>
           </div>
         </div>
-        <div className="slied2-second">
+        <div className="slide2-second">
           <img src={ecommerce} alt="Service2" />
           <p>
             Our experts can help you create an online storefront that's easy to
