@@ -11,7 +11,6 @@ const ServiceSlides = () => {
   return (
     <>
       <div className="services-slides">
-        <div className="hidden-div"></div>
         <ServiceSlider1 />
         <ServiceSlider2 />
         <ServiceSlider3 />

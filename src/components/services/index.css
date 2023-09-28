@@ -1,3 +1,14 @@
 .services {
   position: relative;
 }
+.services-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.hidden-div {
+  height: 99vh;
+  width: 98vw;
+  background: transparent;
+}

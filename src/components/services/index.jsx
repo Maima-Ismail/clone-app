@@ -4,7 +4,10 @@ const Services = () => {
   return (
     <div className="services">
       <ServiceHeader />
-      <ServiceSlides />
+      <div className="services-container">
+        <div className="hidden-div">nothing</div>
+        <ServiceSlides />
+      </div>
     </div>
   )
 }

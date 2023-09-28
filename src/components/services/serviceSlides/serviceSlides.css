@@ -3,13 +3,4 @@
   margin-bottom: 8rem;
   background-color: black;
   color: rgb(216, 216, 216);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.hidden-div {
-  height: 99vh;
-  width: 98vw;
-  background: transparent;
 }
