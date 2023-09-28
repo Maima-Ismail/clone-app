@@ -1,6 +1,7 @@
 #slide4-container {
   display: flex;
   flex-flow: column wrap;
+  background-color: #000000;
 }
 #slide4-first {
   display: flex;

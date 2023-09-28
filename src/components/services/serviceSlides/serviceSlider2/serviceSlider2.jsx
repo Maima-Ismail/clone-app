@@ -1,4 +1,4 @@
-import ecommerce from '../../../assets/ecommerce-web-solutions.png'
+import ecommerce from '../../../../assets/ecommerce-web-solutions.png'
 import './serviceSlider2.css'
 const ServiceSlider2 = () => {
   return (
