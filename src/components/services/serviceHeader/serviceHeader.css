@@ -1,6 +1,7 @@
 .service-header-container {
   display: flex;
   flex-flow: column wrap;
+  position: fixed;
 }
 .service-header-first {
   display: flex;
@@ -22,14 +23,12 @@
 }
 @media (min-width: 0px) and (max-width: 1024px) {
   .service-header-container {
-    height: 99.5vh;
+    height: 100vh;
     background-image: url('../../../assets/Services.png');
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
     color: rgb(255, 255, 255);
-  }
-  .service-header-heading {
   }
   #service-header-h1 {
     min-width: 280px;
@@ -62,6 +61,7 @@
 @media (min-width: 1025px) {
   .service-header-container {
     flex-flow: row wrap;
+    width: 100vw;
   }
   .service-header-vertical-line {
     margin-left: 10rem;
