@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Services from './components/services'
+import ContactUs from './components/contactUs/contactUs'
 function App() {
   return (
     <>
-      <Services />
+      <ContactUs />
     </>
   )
 }

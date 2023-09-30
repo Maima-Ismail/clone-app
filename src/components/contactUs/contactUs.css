@@ -1,0 +1,68 @@
+img {
+  height: 27rem;
+  width: 99.8vw;
+  object-fit: cover;
+}
+input,
+textarea {
+  display: block;
+  border-radius: none;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgb(212, 212, 212);
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+input {
+  height: 4rem;
+}
+textarea {
+  font-size: 1rem;
+}
+input:focus {
+  outline: none;
+}
+input:first-child {
+  margin-top: 3rem;
+}
+.contact-form {
+  margin: 4.5rem 1.5rem;
+}
+.contact-h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 3rem;
+  margin: 0rem;
+}
+.contact-h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(143, 142, 141);
+  line-height: 1.8rem;
+}
+button {
+  background-color: rgba(13, 33, 35, 1);
+  color: white;
+  height: 4rem;
+  border: none;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .contact-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  input:nth-child(1) {
+    margin-top: 3rem;
+  }
+  .contact-name input {
+    width: 49%;
+  }
+  .contact-name input:nth-child(2) {
+    margin-top: 3rem;
+  }
+}
