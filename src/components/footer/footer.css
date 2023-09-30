@@ -24,6 +24,14 @@ body {
   font-size: medium;
   border: none;
 }
+.newsletter-input input:focus {
+  outline: none;
+  border: none;
+}
+.newsletter-input button:focus {
+  outline: none;
+  border: none;
+}
 .newsletter-input button {
   height: 2.9rem;
   width: 3.5rem;
@@ -52,6 +60,11 @@ img {
 .icon {
   padding-right: 1.5rem;
   font-size: 1.3rem;
+}
+.form-error {
+  color: #bb0808;
+  font-size: 12px;
+  padding-left: 1rem;
 }
 @media (min-width: 0px) and (max-width: 639px) {
   .footer-icons-top {
@@ -118,8 +131,10 @@ img {
     margin: 0;
   }
   .newsletter-input {
-    min-width: 50%;
-    max-width: 70%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    min-width: 47%;
+    max-width: 60%;
   }
   .newsletter-input input {
     width: 80%;
