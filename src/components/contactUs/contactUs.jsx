@@ -3,7 +3,11 @@ import ContactPageImage from '../../assets/ContactPageImage.png'
 const ContactUs = () => {
   return (
     <div className="contact-container">
-      <img src={ContactPageImage} alt="Contact Us" />
+      <div className="contact-image">
+        <img src={ContactPageImage} alt="Contact Us" />
+        <div className="contact-card"></div>
+        <p className="contact-h1">Get in touch</p>
+      </div>
       <div className="contact-form">
         <p className="contact-h1">We Happy To Help</p>
         <p className="contact-h2">
