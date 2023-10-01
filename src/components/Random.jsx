@@ -3,7 +3,8 @@ const Random = () => {
     email: '',
     password: '',
   }
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
     console.log(variable)
   }
   return (
@@ -13,7 +14,7 @@ const Random = () => {
           type="email"
           name="email"
           placeholder="Email Address"
-          value={variable.email}
+          defaultValue={variable.email}
           onChange={(e) => {
             variable.email = e.target.value
           }}
@@ -22,7 +23,7 @@ const Random = () => {
           type="password"
           name="password"
           placeholder="Password"
-          value={variable.password}
+          defaultValue={variable.password}
           onChange={(e) => {
             variable.password = e.target.value
           }}
