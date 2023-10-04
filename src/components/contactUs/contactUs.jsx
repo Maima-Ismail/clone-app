@@ -33,7 +33,12 @@ const ContactUs = () => {
           {({ handleSubmit }) => (
             <form onSubmit={handleSubmit}>
               <div className="contact-name">
-                <Field type="text" placeholder="FIRST NAME" name="firstName" />
+                <Field
+                  type="text"
+                  placeholder="FIRST NAME*"
+                  name="firstName"
+                  required
+                />
                 <ErrorMessage
                   name="firstName"
                   component="div"
@@ -46,7 +51,7 @@ const ContactUs = () => {
                   className="contact-form-error"
                 />
               </div>
-              <Field type="email" placeholder="EMAIL ADDRESS" name="email" />
+              <Field type="email" placeholder="EMAIL ADDRESS*" name="email" />
               <ErrorMessage
                 name="email"
                 component="div"
@@ -61,7 +66,7 @@ const ContactUs = () => {
               <Field
                 as="textarea"
                 rows={10}
-                placeholder="MESSAGE"
+                placeholder="MESSAGE*"
                 name="message"
               />
               <ErrorMessage

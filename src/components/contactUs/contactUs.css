@@ -3,6 +3,7 @@ img {
   width: 99.8vw;
   object-fit: cover;
 }
+
 input,
 textarea {
   display: block;
@@ -15,34 +16,42 @@ textarea {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 input {
   height: 4rem;
 }
+
 textarea {
   font-size: 1rem;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
 }
+
 input:first-child {
   margin-top: 3rem;
 }
+
 .contact-form {
   margin: 4.5rem 1.5rem;
 }
+
 .contact-h1 {
   font-size: 2rem;
   font-weight: bolder;
   line-height: 3rem;
   margin: 0rem;
 }
+
 .contact-h2 {
   font-size: 1rem;
   font-weight: 500;
   color: rgb(143, 142, 141);
   line-height: 1.8rem;
 }
+
 button {
   background-color: rgba(13, 33, 35, 1);
   color: white;
@@ -52,53 +61,65 @@ button {
   font-size: 0.9rem;
   font-weight: bold;
 }
+
 .contact-form-error {
   color: red;
   font-size: 0.7rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 @media (min-width: 0px) and (max-width: 1023px) {
   .contact-card,
   .contact-image p {
     display: none;
   }
 }
+
 @media (min-width: 1024px) {
   .contact-container {
     display: flex;
     flex-flow: row wrap;
   }
+
   .contact-h1 {
     font-size: 2.5rem;
   }
+
   .contact-image {
     width: 40%;
     position: relative;
   }
+
   .contact-image img {
     width: 100%;
     height: 55rem;
     object-fit: cover;
   }
+
   .contact-form {
     flex: 1;
     width: 50%;
     margin: 4.5rem 3.5rem;
   }
+
   .contact-name {
     display: flex;
     justify-content: space-between;
   }
+
   input:nth-child(1) {
     margin-top: 3rem;
   }
+
   .contact-name input {
     width: 49%;
   }
+
   .contact-name input:nth-child(2) {
     margin-top: 3rem;
   }
+
   .contact-card {
     position: absolute;
     top: 15rem;
@@ -108,6 +129,7 @@ button {
     background-color: rgb(13, 33, 35, 1);
     opacity: 20%;
   }
+
   .contact-image p {
     position: absolute;
     top: 16rem;
