@@ -52,6 +52,12 @@ button {
   font-size: 0.9rem;
   font-weight: bold;
 }
+.contact-form-error {
+  color: red;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 @media (min-width: 0px) and (max-width: 1023px) {
   .contact-card,
   .contact-image p {
