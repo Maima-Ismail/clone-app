@@ -3,6 +3,9 @@
   width: 100%;
   height: 99.6vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 
 .Home-slider-container img {
@@ -26,6 +29,26 @@
 
 .active {
   opacity: 1;
+}
+
+.slider-button {
+  height: 0.6rem;
+  width: 0.6rem;
+  margin: 0.8rem auto;
+  border-radius: 100%;
+  background-color: rgb(87, 87, 87);
+}
+
+.slider-buttons {
+  margin-right: 2rem;
+  display: block;
+  z-index: 1;
+}
+
+.active-button {
+  background-color: white;
+  height: 0.8rem;
+  width: 0.8rem;
 }
 
 @media (min-width: 0px) and (max-width: 767px) {

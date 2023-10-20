@@ -4,6 +4,9 @@ import '../../Data Files/slides'
 import slides from '../../Data Files/slides'
 const HomePageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const handleClick = (index) => {
+    setCurrentSlide(index)
+  }
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
@@ -14,6 +17,19 @@ const HomePageSlider = () => {
   }, [currentSlide])
   return (
     <div className="Home-slider-container">
+      <div className="slider-buttons">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slider-button ${
+              currentSlide === index ? 'active-button' : ''
+            }`}
+            onClick={() => {
+              handleClick(index)
+            }}
+          ></div>
+        ))}
+      </div>
       {slides.map((slide, index) => (
         <div
           key={index}
