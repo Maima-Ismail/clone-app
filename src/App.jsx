@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import './App.css'
-import Services from './components/services'
+import HomePageSlider from './components/HomePage.jsx/HomePageSlider'
 function App() {
   return (
     <>
-      <Services />
+      <HomePageSlider />
     </>
   )
 }
