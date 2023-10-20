@@ -1,4 +1,4 @@
-import WebPortal from '../../../assets/ServicesWebPortal.png'
+import WebPortal from '../../../../assets/ServicesWebPortal.png'
 import './serviceSlider7.css'
 const ServiceSlider7 = () => {
   return (

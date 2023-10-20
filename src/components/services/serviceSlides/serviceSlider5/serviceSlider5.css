@@ -1,23 +1,20 @@
-#slide8-container {
+#boxDiv {
   display: flex;
   flex-flow: column wrap;
+  background-color: #000000;
 }
-#slide8-first {
+#leftDiv {
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
 }
-#slide8-heading {
-  display: flex;
-  flex-direction: column;
-}
-#slide8-h1,
-#slide8-h2,
-#slide8-h3 {
+#p1,
+#p2,
+#p3 {
   margin: 0;
   box-sizing: border-box;
 }
-#slide8-second img {
+#rightDiv img {
   display: inline-block;
 }
 hr {
@@ -25,91 +22,107 @@ hr {
   margin-top: 20%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
-  #slide8-heading {
+  #boxDiv > p {
+    padding: 0.5rem 4% 5rem 4%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  #p1 {
+    font-size: 1.25rem;
+    padding: 0.5rem 4%;
+  }
+  #p2 {
+    font-weight: bolder;
+    font-size: 2.25rem;
+    padding: 0.5rem 4%;
+    line-height: 3rem;
+    min-width: 200px;
+    max-width: 570px;
+  }
+  #p3 {
+    font-size: 1.25rem;
+    padding: 0.5rem 4%;
+    line-height: 2rem;
     min-width: 200px;
     max-width: 320px;
   }
-  #slide8-h1 {
-    font-size: 1.25rem;
-    padding: 0.5rem 10%;
-  }
-  #slide8-h2 {
-    font-weight: bolder;
-    font-size: 2.25rem;
-    padding: 0.5rem 10%;
-    line-height: 3rem;
-  }
-  #slide8-h3 {
-    font-size: 1.25rem;
-    padding: 0.5rem 10%;
-    line-height: 2rem;
-  }
-  #slide8-second {
+  #rightDiv {
     text-align: center;
   }
-  #slide8-second img {
+  #rightDiv img {
     margin: 2rem 0rem;
-    width: 350px;
+    width: 300px;
   }
-  #slide8-container > p {
+  #rightDiv p {
     text-align: left;
-    padding: 0.3rem 4%;
+    padding: 0.5rem 4%;
     font-size: 1.25rem;
     line-height: 2rem;
+    margin: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
-  #slide8-h1,
-  #slide8-h2,
-  #slide8-h3 {
+  #p1,
+  #p2,
+  #p3 {
     padding: 0.5rem 5%;
   }
 }
 @media (min-width: 1025px) {
-  #slide8-container {
+  #boxDiv {
     flex-flow: row wrap;
   }
-  #slide8-first {
-    flex: 0.4;
-    margin-left: 10%;
-    margin-top: 2rem;
+  #boxDiv > p {
+    padding: 0.5rem 4% 0.5rem 4%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+    min-width: 300px;
+    max-width: 550px;
+    margin-left: 50%;
   }
-  #slide8-second {
-    flex: 0.6;
+  #leftDiv {
+    flex: 1;
+    margin-left: 10%;
+    justify-content: center;
+  }
+  #rightDiv {
+    flex: 1;
     display: flex;
     flex-flow: column wrap;
+    justify-content: end;
     align-items: center;
-    margin: 0;
-    margin-right: 0rem;
+    margin-right: 2rem;
   }
-  #slide8-heading {
-    min-width: 200px;
-    max-width: 520px;
-  }
-  #slide8-h1 {
+
+  #p1 {
     font-size: 2.5rem;
     padding: 0.5rem 0%;
   }
-  #slide8-h2 {
+  #p2 {
     font-weight: bolder;
-    font-size: 3.25rem;
+    font-size: 3.2rem;
     padding: 0.5rem 0%;
     line-height: 4.25rem;
+    min-width: 120%;
+    max-width: 150%;
   }
-  #slide8-h3 {
+  #p3 {
     font-size: 2.5rem;
     padding: 0.5rem 0%;
     line-height: 3.5rem;
+    min-width: 200px;
+    max-width: 450px;
   }
 
-  #slide8-second img {
-    margin: 2rem 0rem 5rem 0rem;
-    width: 400px;
+  #rightDiv img {
+    margin: 35rem 0rem 5rem 0rem;
+    width: 320px;
   }
-  #slide8-container > p {
+  #rightDiv p {
     font-weight: bold;
     text-align: left;
-    padding: 0.5rem 5% 2rem 10%;
+    padding: 0.5rem 5%;
     font-size: 1rem;
     line-height: 2rem;
   }

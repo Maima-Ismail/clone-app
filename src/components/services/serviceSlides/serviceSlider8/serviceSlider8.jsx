@@ -1,4 +1,4 @@
-import DevTeam from '../../../assets/dev-team-collaboration.png'
+import DevTeam from '../../../../assets/dev-team-collaboration.png'
 import './serviceSlider8.css'
 const ServiceSlider8 = () => {
   return (

@@ -1,4 +1,4 @@
-import WebDesign from '../../../assets/web-design.png'
+import WebDesign from '../../../../assets/web-design.png'
 import './serviceSlider6.css'
 const ServiceSlider6 = () => {
   return (

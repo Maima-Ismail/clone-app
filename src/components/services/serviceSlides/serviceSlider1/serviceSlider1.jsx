@@ -1,4 +1,4 @@
-import mobile from '../../../assets/ServicesMobileApp.png'
+import mobile from '../../../../assets/ServicesMobileApp.png'
 import './serviceSlider1.css'
 const ServiceSlider1 = () => {
   return (

@@ -1,4 +1,4 @@
-import desktop from '../../../assets/pro-desktop.png'
+import desktop from '../../../../assets/pro-desktop.png'
 import './serviceSlider3.css'
 const ServiceSlider3 = () => {
   return (

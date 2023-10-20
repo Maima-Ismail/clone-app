@@ -1,4 +1,4 @@
-import SaaS from '../../../assets/ServicesSaaS.png'
+import SaaS from '../../../../assets/ServicesSaaS.png'
 import './serviceSlider5.css'
 const ServiceSlider5 = () => {
   return (

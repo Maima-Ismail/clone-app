@@ -1,4 +1,4 @@
-import quality from '../../../assets/ServicesQualityEngineer.png'
+import quality from '../../../../assets/ServicesQualityEngineer.png'
 import './serviceSlider4.css'
 const ServiceSlider4 = () => {
   return (
