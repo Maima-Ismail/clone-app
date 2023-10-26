@@ -45,7 +45,7 @@ const Footer = () => {
                     type="email"
                     placeholder="Email Address"
                     name="email"
-                    className="form-input"
+                    className="footer-form-input"
                   />
                   <button type="submit">
                     <img src={arrow} alt="Enter" />

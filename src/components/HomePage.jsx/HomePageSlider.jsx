@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './HomePageSlider.css'
 import '../../Data Files/slides'
 import slides from '../../Data Files/slides'
+import { Outlet, Link } from 'react-router-dom'
 const HomePageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const handleClick = (index) => {
@@ -17,6 +18,21 @@ const HomePageSlider = () => {
   }, [currentSlide])
   return (
     <div className="Home-slider-container">
+      <div className="navbar">
+        <nav>
+          <ul className="nav-links">
+            <li>
+              <Link to={`/`}>Home</Link>
+            </li>
+            <li>
+              <Link to={`/contact`}>Contact Us</Link>
+            </li>
+            <li>
+              <Link to={`/services`}>Services</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div className="slider-buttons">
         {slides.map((slide, index) => (
           <div

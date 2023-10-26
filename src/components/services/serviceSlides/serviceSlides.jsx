@@ -1,3 +1,4 @@
+import Footer from '../../footer/footer'
 import ServiceSlider1 from './serviceSlider1/serviceSlider1'
 import ServiceSlider2 from './serviceSlider2/serviceSlider2'
 import ServiceSlider3 from './serviceSlider3/serviceSlider3'
@@ -20,6 +21,7 @@ const ServiceSlides = () => {
         <ServiceSlider7 />
         <ServiceSlider8 />
       </div>
+      <Footer />
     </>
   )
 }

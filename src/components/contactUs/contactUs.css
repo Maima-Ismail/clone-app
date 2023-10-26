@@ -1,10 +1,15 @@
+.contact-container {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
 img {
   height: 27rem;
   width: 99.8vw;
   object-fit: cover;
 }
 
-input,
+.contact-form input,
 textarea {
   display: block;
   border-radius: none;
@@ -17,20 +22,20 @@ textarea {
   margin-bottom: 1rem;
 }
 
-input {
+.contact-form input {
   height: 4rem;
 }
 
-textarea {
+.contact-form textarea {
   font-size: 1rem;
 }
 
-textarea:focus,
+.contact-form textarea:focus,
 input:focus {
   outline: none;
 }
 
-input:first-child {
+.contact-form input:first-child {
   margin-top: 3rem;
 }
 
@@ -52,7 +57,7 @@ input:first-child {
   line-height: 1.8rem;
 }
 
-button {
+.contact-form button {
   background-color: rgba(13, 33, 35, 1);
   color: white;
   height: 4rem;
@@ -108,7 +113,7 @@ button {
     justify-content: space-between;
   }
 
-  input:nth-child(1) {
+  .contact-form input:nth-child(1) {
     margin-top: 3rem;
   }
 
