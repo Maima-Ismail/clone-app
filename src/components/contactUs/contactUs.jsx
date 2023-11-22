@@ -1,5 +1,5 @@
 import './contactUs.css'
-import ContactPageImage from '../../assets/ContactPageImage.png'
+import ContactPageImage from '../../assets/contactPageImage.png'
 import ContactSchema from '../../schemas/contactSchema'
 import { Formik, Field, ErrorMessage } from 'formik'
 const ContactUs = () => {
