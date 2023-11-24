@@ -5,6 +5,7 @@ body {
 
 .services-slides {
   margin: 0rem;
+  width: 99vw;
   background-color: black;
   color: rgb(216, 216, 216);
 }

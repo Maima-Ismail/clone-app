@@ -1,11 +1,10 @@
 import './App.css'
-import HomePageSlider from './components/HomePage.jsx/HomePageSlider'
+import HomePage from './components/HomePage/index'
 import ContactUs from './components/contactUs/contactUs'
 import Services from './components/services'
-import Footer from './components/footer/footer'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const router = createBrowserRouter([
-  { path: '/', element: <HomePageSlider /> },
+  { path: '/', element: <HomePage/> },
   {
     path: '/contact',
     element: <ContactUs />,
@@ -19,7 +18,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Footer />
     </>
   )
 }

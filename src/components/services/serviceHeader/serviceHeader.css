@@ -63,7 +63,7 @@
 @media (min-width: 1025px) {
   .service-header-container {
     flex-flow: row wrap;
-    width: 100vw;
+    width: 99vw;
   }
   .service-header-vertical-line {
     margin-left: 10rem;
