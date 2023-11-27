@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './HomePageSlider.css'
-import '../../../Data Files/slides'
 import slides from '../../../Data Files/slides'
 import { Outlet, Link } from 'react-router-dom'
 const HomePageSlider = () => {
