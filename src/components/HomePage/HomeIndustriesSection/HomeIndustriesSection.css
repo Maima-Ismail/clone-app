@@ -1,0 +1,33 @@
+.industries-container{
+    display: flex;
+}
+.industries-heading{
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.industry-slide-container img{
+    width: 100%;
+}
+@media (max-width: 1023px) {
+    .industries-container{
+        flex-flow: column;
+    }
+    .industry-name-container{
+        display: flex;
+        flex-flow: row;
+        margin-bottom: 2rem;
+    }
+    .industry-name{
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .industry-slide-container{
+        width: 100%;
+        height: 30rem;
+    }
+}
+@media (min-width: 1024px) {
+    
+}

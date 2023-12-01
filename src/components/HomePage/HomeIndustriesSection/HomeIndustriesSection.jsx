@@ -17,6 +17,8 @@ const HomeIndustriesSection = () => {
     return(
         <div className='home-industries-section'>
             <p className='industries-heading'>Industries we worked in</p>
+            <div className='industries-container'>
+                <div className='industry-name-container'>
             {industries.map((industry,index)=>(
                 <div className={`industry-name ${currentIndustry === index ? 'active-industry-name' : ''}`}
                 key={index}
@@ -27,6 +29,8 @@ const HomeIndustriesSection = () => {
                     {industry.name}
                 </div>
             ))}
+                </div>
+            <div className='industry-slide-container'>
             {industries.map((industry,index)=>(
                 <div className={`industry-slide ${currentIndustry === index ? 'active-industry' : ''}`}
                 key={index}
@@ -37,6 +41,8 @@ const HomeIndustriesSection = () => {
                     </div>
                 </div>
             ))}
+            </div>
+            </div>
         </div>
 
     )

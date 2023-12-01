@@ -27,15 +27,15 @@
     }
     .goal-heading{
         color: #c4c3c3;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: bolder;
         margin: 0;
     }
     
     .goal-text{
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-weight: normal;
         padding: 0rem 4rem;
-        line-height: 5rem;
+        line-height: 3rem;
     }
 }
