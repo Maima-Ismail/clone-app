@@ -8,9 +8,9 @@ const HomeIndustriesSection = () => {
     }
     useEffect(() => {
         const interval = setInterval(()=>{
-            setCurrentIndustry( (prevIndustry) => (prevIndustry + 1) % industries)
+            setCurrentIndustry( (prevIndustry) => (prevIndustry + 1) % industries.length)
         }, 5000)
-        return () =>{
+        return () => {
             clearInterval(interval)
         }
     }, [currentIndustry])
@@ -29,18 +29,19 @@ const HomeIndustriesSection = () => {
                     {industry.name}
                 </div>
             ))}
-                </div>
+            </div>
             <div className='industry-slide-container'>
             {industries.map((industry,index)=>(
                 <div className={`industry-slide ${currentIndustry === index ? 'active-industry' : ''}`}
                 key={index}
                 >
-                    <img src={industry.image.src} alt={industry.image.alt}/>
+                    <img src={industry.image.src} alt={industry.image.alt} className='industry-image'/>
                     <div className='industry-description-bg'>
-                        <p>{industry.description}</p>
+                        <p className='industry-description'>{industry.description}</p>
                     </div>
                 </div>
             ))}
+            <div className='industries-white-div'></div>
             </div>
             </div>
         </div>

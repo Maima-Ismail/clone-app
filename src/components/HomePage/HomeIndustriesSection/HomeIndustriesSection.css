@@ -1,33 +1,150 @@
 .industries-container{
     display: flex;
 }
-.industries-heading{
-    font-size: 4rem;
-    font-weight: bolder;
-    text-align: center;
-}
-.industry-slide-container img{
-    width: 100%;
-}
+
 @media (max-width: 1023px) {
     .industries-container{
         flex-flow: column;
     }
+
+    .industries-heading{
+        font-size: 3rem;
+        font-weight: bolder;
+        color: #c4c3c3;
+        margin: 3rem 1rem;
+    }
+
     .industry-name-container{
         display: flex;
         flex-flow: row;
         margin-bottom: 2rem;
     }
+    
     .industry-name{
-        margin: 1rem;
+        margin: 0rem 1rem;
         font-size: 1.5rem;
         font-weight: bolder;
     }
+    
     .industry-slide-container{
         width: 100%;
-        height: 30rem;
+        height: 40rem;
+        position: relative;
+        background-color: #000000;
+        color: white;
+    }
+
+    .industry-slide-container img{
+        width: 100%;
+        height: 40rem;
+    }
+    
+    .industry-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .active-industry{
+        opacity: 1;
+    }
+    
+    .industry-image{
+        opacity: 0.5;
+    }
+    
+    .industry-description-bg{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        margin: 0 1rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
     }
 }
+
+@media (max-width: 767px){
+    .industry-name{
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+}
+
 @media (min-width: 1024px) {
+    .home-industries-section{
+        margin-bottom: 5rem;
+    }
+
+  .industries-heading{
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        margin: 3rem 0rem;
+    }
+
+    .industry-name-container{
+        margin: 3rem 3rem 0rem 6rem;    
+    }
+
+    .industry-name{
+        margin: 3rem 0rem;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    .industry-slide-container{
+        width: 100%;
+        height: 55rem;
+        position: relative;
+        background-color: #000000;
+        color: white;
+    }
+
+    .industry-slide-container img{
+        width: 100%;
+        height: 100%;
+    }
     
+    .industry-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        transition: opacity 1s ease-in-out;
+    }
+    
+    .active-industry{
+        opacity: 1;
+    }
+    
+    .industry-description-bg{
+        position: absolute;
+        background-color: black;
+        box-sizing: border-box;
+        height: 55rem;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        margin: 0 12rem 0 6rem;
+        padding: 15rem 1rem 0rem 1rem;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        font-weight: bold;
+    }
+
+    .industries-white-div{
+        position: absolute;
+        height: 6rem;
+        top: 35rem;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
 }
