@@ -4,79 +4,61 @@ import industries from '../../../Data Files/industries';
 
 const HomeIndustriesSection = () => {
     const [currentIndustry, setCurrentIndustry] = useState(0);
-    const [isBarVisible, setBarVisibility] = useState(true);
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const industryContainerRef = useRef(null);
     const industryNameRef = useRef(null);
     const industryBarRef = useRef(null);
+    const industryContainerRef = useRef(null);
+    const intervalRef = useRef(null);
 
     const handleClick = (index) => {
         setCurrentIndustry(index);
-        setBarVisibility(true);
-    };
 
-    const handleScroll = () => {
-        const containerScrollPosition = industryContainerRef.current.scrollLeft;
-        const activeIndustryName = industryNameRef.current.querySelector('.active-industry-name');
-        const industryNameBar = industryBarRef.current;
+        const clickedIndustryName = industryNameRef.current.querySelector(`.industry-name:nth-child(${index + 1})`);
+        const clickedIndustryBar = industryBarRef.current;
+        const industryContainer = industryContainerRef.current;
 
-        if (activeIndustryName && industryNameBar) {
-            const { left } = activeIndustryName.getBoundingClientRect();
-            const scrollDelta = containerScrollPosition - scrollPosition;
-            industryNameBar.style.left = `${left + scrollDelta}px`;
-            setScrollPosition(scrollDelta);
+        if (clickedIndustryName && clickedIndustryBar) {
+            const { width, left } = clickedIndustryName.getBoundingClientRect();
+            const scrollLeft = industryContainer.scrollLeft;
+            clickedIndustryBar.style.width = `${width}px`;
+            clickedIndustryBar.style.marginLeft = `${left + scrollLeft}px`;
         }
     };
 
-    useEffect(() => {
-        const interval = setInterval(() => {
+    const handleMouseEnter = () => {
+        // Clear the interval when the mouse enters
+        clearInterval(intervalRef.current);
+    };
+
+    const handleMouseLeave = () => {
+        // Restart the interval when the mouse leaves
+        intervalRef.current = setInterval(() => {
             setCurrentIndustry((prevIndustry) => (prevIndustry + 1) % industries.length);
-            setBarVisibility(false);
+        }, 5000);
+    };
+
+    useEffect(() => {
+        // Start the interval when the component mounts
+        intervalRef.current = setInterval(() => {
+            setCurrentIndustry((prevIndustry) => (prevIndustry + 1) % industries.length);
         }, 5000);
 
+        // Clear the interval when the component is unmounted
         return () => {
-            clearInterval(interval);
+            clearInterval(intervalRef.current);
         };
-    }, [currentIndustry]);
+    }, []);
 
     useEffect(() => {
-        if (isBarVisible) {
-            const activeIndustryName = industryNameRef.current.querySelector('.active-industry-name');
-            const industryNameBar = industryBarRef.current;
+        // Set the initial width and margin for the first industry
+        const industryName = industryNameRef.current.querySelector(`.industry-name:nth-child(1)`);
+        const industryBar = industryBarRef.current;
 
-            if (activeIndustryName && industryNameBar) {
-                const { width, left } = activeIndustryName.getBoundingClientRect();
-                industryNameBar.style.width = `${width}px`;
-                industryNameBar.style.left = `${left}px`;
-            }
+        if (industryName && industryBar) {
+            const { width, left } = industryName.getBoundingClientRect();
+            industryBar.style.width = `${width}px`;
+            industryBar.style.marginLeft = `${left}px`;
         }
-    }, [currentIndustry, isBarVisible, scrollPosition]);
-
-    useEffect(() => {
-        setBarVisibility(true);
-        setScrollPosition(0);
-        const firstIndustryName = industryNameRef.current.querySelector('.industry-name');
-        const industryNameBar = industryBarRef.current;
-
-        if (firstIndustryName && industryNameBar) {
-            const { left } = firstIndustryName.getBoundingClientRect();
-            console.log(left)
-            industryNameBar.style.left = `${left}px`;}
     }, []);
-
-    useEffect(() => {
-        const handleScrollEvent = () => {
-            handleScroll();
-        };
-
-        const industryNameContainer = industryContainerRef.current;
-        industryNameContainer.addEventListener('scroll', handleScrollEvent);
-
-        return () => {
-            industryNameContainer.removeEventListener('scroll', handleScrollEvent);
-        };
-    }, []);
-
 
     return (
         <div className='home-industries-section'>
@@ -85,19 +67,23 @@ const HomeIndustriesSection = () => {
                 className='industries-container'
                 ref={industryNameRef}
             >
-                <div className='industry-name-container' ref={industryContainerRef}>
-                    {industries.map((industry, index) => (
-                        <div
-                            className={`industry-name ${currentIndustry === index ? 'active-industry-name' : ''}`}
-                            key={index}
-                            onClick={() => {
-                                handleClick(index);
-                            }}
-                        >
-                            {industry.name}
-                            <div className='industry-name-bar' ref={industryBarRef}></div>
-                        </div>
-                    ))}
+                <div className='industry-name-section' ref={industryContainerRef}>
+                    <div className='industry-name-container'>
+                        {industries.map((industry, index) => (
+                            <div
+                                className={`industry-name ${currentIndustry === index ? 'active-industry-name' : ''}`}
+                                key={index}
+                                onClick={() => {
+                                    handleClick(index);
+                                }}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                {industry.name}
+                            </div>
+                        ))}
+                    </div>
+                    <div className="industry-name-bar" ref={industryBarRef}></div>
                 </div>
                 <div className='break-industries-section'></div>
                 <div className='industry-slide-container'>
