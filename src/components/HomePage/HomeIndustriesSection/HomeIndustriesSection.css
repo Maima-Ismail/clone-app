@@ -7,9 +7,11 @@
         display: flex;
         flex-flow: column;
         overflow-x: scroll;
-        max-width: 800px;
-        -ms-overflow-style: none;
+        padding-right: 1rem;
+    }
 
+    .industry-name-section::-webkit-scrollbar {
+        display: none;
     }
 
     .break-industries-section{
@@ -45,6 +47,7 @@
     }
     
     .industry-name{
+        box-sizing: content-box;
         margin: 0rem 1rem;
         font-size: 1.5rem;
         font-weight: bolder;
@@ -53,6 +56,7 @@
     .industry-name:hover{
         cursor: pointer;
     }
+    
     .industry-slide-container{
         width: 100%;
         height: 40rem;

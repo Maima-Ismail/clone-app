@@ -21,35 +21,37 @@ const HomeIndustriesSection = () => {
             const scrollLeft = industryContainer.scrollLeft;
             clickedIndustryBar.style.width = `${width}px`;
             clickedIndustryBar.style.marginLeft = `${left + scrollLeft}px`;
+
+            clickedIndustryName.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center',
+                inlineMargin: 10,
+            });
         }
     };
 
     const handleMouseEnter = () => {
-        // Clear the interval when the mouse enters
         clearInterval(intervalRef.current);
     };
 
     const handleMouseLeave = () => {
-        // Restart the interval when the mouse leaves
         intervalRef.current = setInterval(() => {
             setCurrentIndustry((prevIndustry) => (prevIndustry + 1) % industries.length);
         }, 5000);
     };
 
     useEffect(() => {
-        // Start the interval when the component mounts
         intervalRef.current = setInterval(() => {
             setCurrentIndustry((prevIndustry) => (prevIndustry + 1) % industries.length);
         }, 5000);
 
-        // Clear the interval when the component is unmounted
         return () => {
             clearInterval(intervalRef.current);
         };
     }, []);
 
     useEffect(() => {
-        // Set the initial width and margin for the first industry
         const industryName = industryNameRef.current.querySelector(`.industry-name:nth-child(1)`);
         const industryBar = industryBarRef.current;
 
