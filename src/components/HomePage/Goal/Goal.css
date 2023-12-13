@@ -1,0 +1,41 @@
+@media (max-width: 1023px){
+    .Goal-container{
+        padding: 5rem 0rem;
+        margin: auto;
+        width: 95%;
+    }
+    .goal-heading{
+        color: #c4c3c3;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 0;
+    }
+    
+    .goal-text{
+        font-size: 1.5rem;
+        font-weight: normal;
+        padding: 0rem 4rem;
+        line-height: 3rem;
+    }
+}
+
+@media (min-width:1024px){
+    .Goal-container{
+        padding: 5rem 0rem;
+        margin: auto;
+        width: 70%;
+    }
+    .goal-heading{
+        color: #c4c3c3;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 0;
+    }
+    
+    .goal-text{
+        font-size: 2rem;
+        font-weight: normal;
+        padding: 0rem 4rem;
+        line-height: 3rem;
+    }
+}

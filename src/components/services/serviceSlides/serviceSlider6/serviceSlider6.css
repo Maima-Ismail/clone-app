@@ -22,7 +22,7 @@
   display: inline-block;
 }
 hr {
-  width: 98.5vw;
+  width: 96vw;
   margin-top: 0%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
@@ -106,7 +106,7 @@ hr {
 
   #slide6-second img {
     margin: 30rem 0rem 5rem 0rem;
-    width: 110%;
+    width: 100%;
   }
   #slide6-second p {
     font-weight: bold;

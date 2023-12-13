@@ -1,0 +1,152 @@
+.home-service-heading{
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding-left: 3rem;
+}
+
+.home-service-list{
+    color: rgb(168, 168, 168);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0;
+    display: inline-block;
+}
+
+.home-service-lists1{
+    width: 17.35rem;
+    padding-left: 2.5rem;
+}
+
+.home-service-lists2{
+    width: 24.5rem;
+    padding-left: 2.5rem;
+}
+
+.home-service-lists3{
+    width: 24.5rem;
+    padding-left: 2.5rem;
+}
+
+.home-service-lists4{
+    width: 24rem;
+    padding-left: 2.5rem;
+}
+
+@media (max-width: 1023px) {
+.home-services-heading1{
+    visibility: hidden;
+}
+
+.home-services-heading2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #c4c3c3;
+    width: 18rem;
+    padding: 1rem;
+}
+
+#home-service1 img{
+    height: 15rem;
+    margin-top: 4rem;
+}
+   
+#home-service2 img{
+    margin-top: 4rem;
+}
+
+#home-service1, #home-service2, #home-service3, #home-service4{
+    margin-bottom: 5rem;
+}
+
+#home-service1{
+    padding-top: 5rem;
+}
+
+#home-service4{
+    padding-bottom: 5rem;
+}
+
+.services-portion{
+    background-color: #f8f8f8;
+}
+}
+
+@media (min-width: 1024px) {
+.home-services-container{
+    background-color: #f8f8f8;
+}
+    
+.home-services-heading2{
+    visibility: hidden;
+}
+    
+.home-services-heading1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.services-portion{
+    display: flex;
+    flex-flow: column;
+}
+
+#home-service1 img, #home-service2 img{
+    height: 15rem;
+    width: 70%;
+    margin: 3rem;
+}
+
+.services-first-div, .services-second-div{
+    display: flex;
+    flex-flow: row;
+}
+
+#home-service1, #home-service2{
+    flex: 1;
+}
+
+#home-service3, #home-service4{
+    flex: 1;
+    padding-bottom: 5rem;
+}
+.services-second-div{
+    display: flex;
+}
+}
+
+@media (max-width: 550px) {
+    .home-service-heading{
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .home-service-list{
+        padding: 0.5rem;
+        margin: 0;
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+    
+    .home-service-lists1{
+        width: 13.35rem;
+        padding-left: 0.5rem;
+    }
+    
+    .home-service-lists2{
+        width: 20.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    .home-service-lists3{
+        width: 20.5rem;
+        padding-left: 0.5rem;
+    }
+    
+    .home-service-lists4{
+        width: 20rem;
+        padding-left: 0.5rem;
+    }
+}

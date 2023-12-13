@@ -179,6 +179,12 @@
     padding-top: 1rem;
   }
 }
+
+@media (min-width: 0px) and (max-width: 375px){
+  .footer-container{
+    padding: 1.5rem;
+  }
+}
 @media (min-width: 1024px) {
   .footer-icons {
     display: none;

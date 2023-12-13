@@ -1,9 +1,12 @@
 import './contactUs.css'
-import ContactPageImage from '../../assets/ContactPageImage.png'
+import ContactPageImage from '../../assets/contactPageImage.png'
 import ContactSchema from '../../schemas/contactSchema'
 import { Formik, Field, ErrorMessage } from 'formik'
+import Footer from '../footer/footer'
 const ContactUs = () => {
   return (
+    <div>
+
     <div className="contact-container">
       <div className="contact-image">
         <img src={ContactPageImage} alt="Contact Us" />
@@ -37,26 +40,20 @@ const ContactUs = () => {
                   type="text"
                   placeholder="FIRST NAME*"
                   name="firstName"
-                  required
-                />
+                  />
+                <Field type="text" placeholder="LAST NAME" name="lastName" />
+              </div>
                 <ErrorMessage
                   name="firstName"
                   component="div"
                   className="contact-form-error"
-                />
-                <Field type="text" placeholder="LAST NAME" name="lastName" />
-                <ErrorMessage
-                  name="lastName"
-                  component="div"
-                  className="contact-form-error"
-                />
-              </div>
+                  />
               <Field type="email" placeholder="EMAIL ADDRESS*" name="email" />
               <ErrorMessage
                 name="email"
                 component="div"
                 className="contact-form-error"
-              />
+                />
               <Field type="text" placeholder="COMPANY" name="company" />
               <ErrorMessage
                 name="company"
@@ -68,18 +65,20 @@ const ContactUs = () => {
                 rows={10}
                 placeholder="MESSAGE*"
                 name="message"
-              />
+                />
               <ErrorMessage
                 name="message"
                 component="div"
                 className="contact-form-error"
-              />
+                />
               <button type="submit">CONNECT</button>
             </form>
           )}
         </Formik>
       </div>
     </div>
+<Footer />
+        </div>
   )
 }
 export default ContactUs
