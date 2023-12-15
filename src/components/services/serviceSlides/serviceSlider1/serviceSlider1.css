@@ -65,6 +65,7 @@
 @media (min-width: 1025px) {
   #slide1-container {
     flex-flow: row wrap;
+    padding-top: 10rem;
   }
   #slide1-first {
     flex: 1;

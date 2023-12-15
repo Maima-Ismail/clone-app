@@ -9,3 +9,7 @@ body {
   background-color: black;
   color: rgb(216, 216, 216);
 }
+
+.services-footer{
+  position: fixed;
+}

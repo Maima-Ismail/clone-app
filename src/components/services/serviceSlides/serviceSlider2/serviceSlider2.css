@@ -22,7 +22,8 @@
   display: inline-block;
 }
 hr {
-  width: 96vw;
+  width: 94.2vw;
+  margin-left: 3rem;
   margin-top: 20%;
 }
 @media (min-width: 0px) and (max-width: 1024px) {

@@ -7,10 +7,29 @@
   width: 99vw;
   top: 0;
   left: 0;
-  z-index: 1;
 }
+
 .hidden-div {
   height: 100vh;
   background: transparent;
+}
+
+@media (min-width: 1024px) {
+  .services-scrollbar{
+    position: absolute;
+    background-color: rgb(167, 163, 163);
+    width: 0.5rem;
+    height: 100%;
+    left: 3rem;
+  }
+
+.inner-scrollbar{
+  width: 0.5rem;
+  background-color: #043308;
+}
+
+  .services-footer{
+    position: relative;
+  }
 }
 

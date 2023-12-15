@@ -21,7 +21,6 @@ const ServiceSlides = () => {
         <ServiceSlider7 />
         <ServiceSlider8 />
       </div>
-      <Footer />
     </>
   )
 }
