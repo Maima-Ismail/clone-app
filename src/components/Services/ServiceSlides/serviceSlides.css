@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.services-slides {
+  margin: 0rem;
+  width: 100vw;
+  background-color: black;
+  color: rgb(216, 216, 216);
+}
+
+.services-footer{
+  position: relative;
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+  hr{
+    margin-left: 0;
+    width: 99.8vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+  hr{
+    width: 98.2vw;
+    margin-left: 1rem;
+    margin-top: 20%;
+  }
+}
+@media (min-width: 1024px){
+  hr{
+    width: 95.25vw;
+    margin-left: 3rem;
+    margin-top: 20%;
+  }
+}
