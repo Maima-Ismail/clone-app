@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'BanglaMNBold';
+  src: url('src/assets/font/bangla-mn.ttf');
+}
+
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   margin: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'BanglaMNBold';
 }

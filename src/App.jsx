@@ -1,10 +1,11 @@
 import './App.css'
-import HomePage from './components/HomePage/index'
-import ContactUs from './components/contactUs/contactUs'
-import Services from './components/services'
+import Home from './pages/Home/index'
+import Projects from './pages/Projects/index'
+import ContactUs from './pages/ContactUs/index'
+import Services from './pages/Services'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 const router = createBrowserRouter([
-  { path: '/', element: <HomePage/> },
+  { path: '/', element: <Home/> },
   {
     path: '/contact',
     element: <ContactUs />,
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: '/services',
     element: <Services />,
+  },
+  {
+    path: '/projects',
+    element: <Projects/>
   },
 ])
 function App() {

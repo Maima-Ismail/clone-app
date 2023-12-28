@@ -1,0 +1,60 @@
+.services {
+  position: relative;
+  width: 100vw;
+}
+
+.services-container {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.hidden-div {
+  height: 100vh;
+  background: transparent;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .services-scrollbar {
+    display: none;
+  }
+
+  .service-slides {
+    background-color: black;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .services-scrollbar {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 0.3rem;
+    left: 4.4vw;
+  }
+
+  .inner-scrollbar {
+    width: 0.3rem;
+    background-color: #07665e;
+  }
+
+  .services-footer {
+    position: relative;
+  }
+}
+@media (min-width: 1024px) {
+  .services-scrollbar {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 0.5rem;
+    left: 5vw;
+  }
+
+  .inner-scrollbar {
+    width: 0.5rem;
+    background-color: #07665e;
+  }
+
+  .services-footer {
+    position: relative;
+  }
+}
