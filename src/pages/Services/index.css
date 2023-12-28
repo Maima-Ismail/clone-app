@@ -1,6 +1,6 @@
 .services {
   position: relative;
-  width: 98vw;
+  width: 100vw;
 }
 
 .services-container {
@@ -29,7 +29,7 @@
     position: fixed;
     background-color: rgb(255, 255, 255);
     width: 0.3rem;
-    left: 1rem;
+    left: 4.4vw;
   }
 
   .inner-scrollbar {
@@ -46,7 +46,7 @@
     position: fixed;
     background-color: rgb(255, 255, 255);
     width: 0.5rem;
-    left: 3rem;
+    left: 5vw;
   }
 
   .inner-scrollbar {

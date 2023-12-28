@@ -22,7 +22,7 @@
   display: inline-block;
 }
 
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 1023px) {
   #slide8-heading {
     min-width: 200px;
     max-width: 320px;
@@ -48,12 +48,13 @@
   #slide8-second img {
     margin: 2rem 0rem;
     width: 350px;
+    object-fit: contain;
   }
   #slide8-container > p {
     text-align: left;
     padding: 0.3rem 4%;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
@@ -63,7 +64,12 @@
     padding: 0.5rem 5%;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
+  #slide8-container {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 1024px) {
   #slide8-container {
     flex-flow: row wrap;
   }
@@ -103,9 +109,9 @@
   #slide8-second img {
     margin: 2rem 0rem 5rem 0rem;
     width: 400px;
+    object-fit: contain;
   }
   #slide8-container > p {
-    font-weight: bold;
     text-align: left;
     padding: 0.5rem 5% 2rem 10%;
     font-size: 1rem;

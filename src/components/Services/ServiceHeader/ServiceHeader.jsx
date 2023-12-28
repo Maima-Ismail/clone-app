@@ -1,9 +1,12 @@
-import './ServiceHeader.css'
+import "./ServiceHeader.css";
+import ImageBackground from "../../../assets/ServicesIntroMobile.png";
 const ServiceHeader = () => {
   return (
     <>
       <div className="service-header-container">
-        <div className="background-image"></div>
+        <div className="background-image-container">
+          <img src={ImageBackground} alt="Background image" />
+        </div>
         <div className="service-header-vertical-line"></div>
         <div className="service-header-first">
           <div className="service-header-heading">
@@ -19,6 +22,6 @@ const ServiceHeader = () => {
         <div className="service-header-second"></div>
       </div>
     </>
-  )
-}
-export default ServiceHeader
+  );
+};
+export default ServiceHeader;

@@ -5,34 +5,35 @@ body {
 
 .services-slides {
   margin: 0rem;
+  padding-top: 10rem;
   width: 100vw;
   background-color: black;
   color: rgb(216, 216, 216);
 }
 
-.services-footer{
+.services-footer {
   position: relative;
 }
 
-@media (min-width: 0px) and (max-width: 767px){
-  hr{
+@media (min-width: 0px) and (max-width: 767px) {
+  hr {
     margin-left: 0;
-    width: 99.8vw;
+    margin-top: 25%;
+    width: 99.5vw;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px)
-{
-  hr{
-    width: 98.2vw;
-    margin-left: 1rem;
+@media (min-width: 768px) and (max-width: 1023px) {
+  hr {
+    width: 95.4vw;
+    margin-left: 4.4vw;
     margin-top: 20%;
   }
 }
-@media (min-width: 1024px){
-  hr{
-    width: 95.25vw;
-    margin-left: 3rem;
+@media (min-width: 1024px) {
+  hr {
+    width: 94vw;
+    margin-left: 5vw;
     margin-top: 20%;
   }
 }

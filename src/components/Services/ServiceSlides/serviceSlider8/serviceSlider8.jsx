@@ -1,5 +1,5 @@
-import DevTeam from '../../../../assets/dev-team-collaboration.png'
-import './serviceSlider8.css'
+import DevTeam from "../../../../assets/dev-team-collaboration.png";
+import "./serviceSlider8.css";
 const ServiceSlider8 = () => {
   return (
     <>
@@ -9,9 +9,7 @@ const ServiceSlider8 = () => {
           <div id="slide8-heading">
             <p id="slide8-h1">We Offer</p>
             <p id="slide8-h2">Managed IT Service</p>
-            <p id="slide8-h3">
-              To handle your product maintenance and updates.
-            </p>
+            <p id="slide8-h3">To handle your product maintenance and updates</p>
           </div>
         </div>
         <div id="slide8-second">
@@ -38,6 +36,6 @@ const ServiceSlider8 = () => {
         </p>
       </div>
     </>
-  )
-}
-export default ServiceSlider8
+  );
+};
+export default ServiceSlider8;

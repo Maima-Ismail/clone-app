@@ -21,7 +21,7 @@
 #slide1-second img {
   display: inline-block;
 }
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 1023px) {
   #slide1-heading {
     min-width: 200px;
     max-width: 320px;
@@ -47,22 +47,32 @@
   #slide1-second img {
     margin: 0rem;
     width: 350px;
+    object-fit: contain;
   }
   #slide1-container > p {
     text-align: left;
     padding: 0.3rem 4%;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 0px) and (max-width: 640px) {
   #slide1-h1,
-  #slide1-h2,
-  #slide1-h3 {
+  #slide1-h2 {
     padding: 0.5rem 5%;
   }
+
+  #slide1-h3 {
+    padding: 0.5rem 10% 0.5rem 5%;
+  }
 }
-@media (min-width: 1025px) {
+
+@media (min-width: 768px) {
+  #slide1-container {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 1024px) {
   #slide1-container {
     flex-flow: row wrap;
     padding-top: 10rem;
@@ -96,12 +106,12 @@
   #slide1-second img {
     position: absolute;
     margin-top: 7rem;
-    left: 32%;
-    width: 500px;
+    left: 42%;
+    width: 350px;
+    object-fit: contain;
   }
   #slide1-para1 {
     flex: 1;
-    font-weight: bold;
     text-align: left;
     padding: 35rem 5% 2rem 10%;
     font-size: 1rem;
