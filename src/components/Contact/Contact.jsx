@@ -1,8 +1,27 @@
 import "./Contact.css";
+import { ClipLoader } from "react-spinners";
 import ContactPageImage from "../../assets/contactPageImage.png";
 import ContactSchema from "../../schemas/ContactSchema";
 import { Formik, Field, ErrorMessage } from "formik";
+import { useState } from "react";
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+  const postData = async (values, action) => {
+    setLoading(true);
+    await new Promise((resolve) => {
+      setTimeout(resolve, 2000);
+    });
+    console.log(values);
+    action.resetForm();
+    setLoading(false);
+    setShowModal(true);
+  };
+
   return (
     <div>
       <div className="contact-container">
@@ -27,8 +46,7 @@ const Contact = () => {
             }}
             validationSchema={ContactSchema}
             onSubmit={(values, action) => {
-              console.log(values);
-              action.resetForm();
+              postData(values, action);
             }}
           >
             {({ handleSubmit }) => (
@@ -69,10 +87,35 @@ const Contact = () => {
                   component="div"
                   className="contact-form-error"
                 />
-                <button type="submit">CONNECT</button>
+                <div className="button-area">
+                  {loading ? (
+                    <ClipLoader
+                      color="#021903"
+                      size={40}
+                      className="clip-loader"
+                    />
+                  ) : (
+                    <button type="submit">Connect</button>
+                  )}
+                </div>
               </form>
             )}
           </Formik>
+        </div>
+        <div
+          className={`thanks-container ${showModal && "open-thanks-div"}`}
+          onClick={closeModal}
+        >
+          <div className="thanks-div">
+            <p className="thanks-heading">Thank you for reaching out to us!</p>
+            <p className="thanks-text">
+              Your message has been successfully submitted. We appreciate your
+              interest and will get back to you as soon as possible.
+            </p>
+            <button type="button" onClick={closeModal}>
+              Got it
+            </button>
+          </div>
         </div>
       </div>
     </div>

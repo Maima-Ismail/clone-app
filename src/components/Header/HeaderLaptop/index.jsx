@@ -3,6 +3,24 @@ import "./index.css";
 import { Link } from "react-router-dom";
 
 const HeaderLaptop = () => {
+  const links = [
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "Services",
+      href: "/services",
+    },
+    {
+      name: "Projects",
+      href: "/projects",
+    },
+    {
+      name: "Contact Us",
+      href: "/contact",
+    },
+  ];
   const navbarRef = useRef(null);
   const [scrolling, setScrolling] = useState(0);
 
@@ -23,27 +41,20 @@ const HeaderLaptop = () => {
   return (
     <>
       <div
-        className={`laptop-navbar ${scrolling === 1 ? "laptop-scrolled" : ""}`}
+        className={`laptop-navbar ${scrolling === 1 && "laptop-scrolled"}`}
         ref={navbarRef}
       >
         <nav>
           <ul
             className={`laptop-nav-links ${
-              scrolling === -1 ? "faded-nav-links" : ""
-            } ${scrolling === 1 ? "laptop-black-content" : ""}`}
+              scrolling === -1 && "faded-nav-links"
+            } ${scrolling === 1 && "laptop-black-content"}`}
           >
-            <li>
-              <Link to={`/`}>Home</Link>
-            </li>
-            <li>
-              <Link to={`/services`}>Services</Link>
-            </li>
-            <li>
-              <Link to={`/projects`}>Projects</Link>
-            </li>
-            <li>
-              <Link to={`/contact`}>Contact Us</Link>
-            </li>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link to={link.href}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>

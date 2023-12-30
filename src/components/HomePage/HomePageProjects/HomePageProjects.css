@@ -221,3 +221,9 @@
     margin-top: 1rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .home-project-container {
+    padding: 3rem 20%;
+  }
+}
