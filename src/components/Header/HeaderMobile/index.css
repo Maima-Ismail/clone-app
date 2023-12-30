@@ -24,35 +24,22 @@ button {
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.6);
 }
 
-.bars-icon {
-  font-size: 2rem;
-  color: white;
+.menu-icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.black-icon {
-  color: black;
-  font-weight: bold;
+.cross-icon {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 @media (max-width: 1023px) {
   .modal-container-laptop {
     display: none;
-  }
-
-  .x-icon-mobile {
-    font-size: 2rem;
-    color: white;
-  }
-
-  .x-icon-mobile {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-  }
-
-  .black-icon {
-    color: black;
-    font-weight: bold;
   }
 
   .nav-links-mobile {
@@ -102,7 +89,8 @@ button {
   }
 
   .nav-icon {
-    font-size: 1rem;
+    height: 1rem;
+    width: 1rem;
     padding: 0rem 0.5rem;
   }
 }
@@ -129,14 +117,6 @@ button {
 
   .modal-container-laptop.open {
     right: 0%;
-  }
-
-  .x-icon {
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
   }
 
   .nav-links {
@@ -180,7 +160,8 @@ button {
 
   .sleek-line {
     position: absolute;
-    margin-left: 1rem;
+    top: 11rem;
+    left: 15rem;
     height: 11rem;
     width: 0.01rem;
     background-color: rgb(150, 150, 150);

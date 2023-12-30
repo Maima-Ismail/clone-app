@@ -13,10 +13,12 @@ img {
 textarea {
   display: block;
   border-radius: none;
+  font-family: "BanglaMNBold";
   box-sizing: border-box;
   width: 100%;
   border: 1px solid rgb(212, 212, 212);
   padding: 1rem;
+  padding-bottom: 0.6rem;
   font-size: 0.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -39,13 +41,8 @@ input:focus {
   margin-top: 3rem;
 }
 
-.contact-form {
-  margin: 4.5rem 1.5rem;
-}
-
 .contact-h1 {
   font-size: 2rem;
-  font-weight: bolder;
   line-height: 3rem;
   margin: 0rem;
 }
@@ -62,8 +59,8 @@ input:focus {
   color: white;
   height: 4rem;
   border: none;
-  width: 100%;
   font-size: 0.9rem;
+  font-family: "BanglaMNBold";
   font-weight: bold;
 }
 
@@ -74,10 +71,96 @@ input:focus {
   margin-bottom: 1rem;
 }
 
+.thanks-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+
+.open-thanks-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks-div {
+  box-sizing: border-box;
+  z-index: 100;
+  background-color: #fff;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.thanks-heading {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.thanks-text {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 0;
+  color: rgb(65, 64, 64);
+  font-size: 0.8rem;
+}
+
+.thanks-div button {
+  background-color: rgba(13, 33, 35, 1);
+  color: white;
+  height: 4rem;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "BanglaMNBold";
+  font-weight: bold;
+  width: 100%;
+}
 @media (min-width: 0px) and (max-width: 1023px) {
+  .contact-form {
+    margin: 4.5rem 1.5rem;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .contact-name {
+    width: 100%;
+  }
+
   .contact-card,
   .contact-image p {
     display: none;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .button-area {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thanks-div {
+    width: 90%;
+    padding: 2rem 1.25rem;
+  }
+
+  .thanks-heading {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .thanks-div {
+    padding: 3rem 3.25rem;
   }
 }
 
@@ -85,6 +168,12 @@ input:focus {
   .contact-container {
     display: flex;
     flex-flow: row wrap;
+  }
+
+  .contact-form {
+    margin: 4.5rem 1.5rem;
+    display: flex;
+    flex-flow: column;
   }
 
   .contact-h1 {
@@ -105,7 +194,7 @@ input:focus {
   .contact-form {
     flex: 1;
     width: 50%;
-    margin: 4.5rem 3.5rem;
+    margin: 4.5rem 3.5rem 8rem 3.5rem;
   }
 
   .contact-name {
@@ -141,5 +230,35 @@ input:focus {
     left: 3.25rem;
     color: white;
     font-size: 3rem;
+  }
+
+  .contact-form button {
+    width: 15rem;
+  }
+
+  .button-area {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+
+  .contact-name {
+    width: 100%;
+  }
+
+  .clip-loader {
+    margin-right: 3rem;
+  }
+
+  .thanks-div {
+    width: 576px;
+    padding: 3.5rem 4rem;
+  }
+
+  .thanks-heading {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0;
+    margin-bottom: 1rem;
   }
 }

@@ -6,10 +6,8 @@ import Footer from "../../components/Footer/Footer";
 import HeaderMobile from "../../components/Header/HeaderMobile";
 
 const Services = () => {
-  const scrollbarRef = useRef(null);
   const innerScrollbarRef = useRef(null);
-  const [scrollbarColor, setScrollbarColor] = useState("transparent");
-
+  const [sticky, setSticky] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const hiddenDiv = document.querySelector(".hidden-div");
@@ -22,38 +20,16 @@ const Services = () => {
       const scrollTop = window.scrollY;
       const scrollPercentage =
         ((scrollTop - window.innerHeight) / totalHeight) * 100;
-      scrollbarRef.current.style.height = `${window.innerHeight}px`;
       scrollTop >= window.innerHeight
-        ? (innerScrollbarRef.current.style.height = `${scrollPercentage}%`)
+        ? (setSticky(true),
+          (innerScrollbarRef.current.style.height = `${scrollPercentage}%`))
         : (innerScrollbarRef.current.style.height = `${0}%`);
+      scrollTop < window.innerHeight && setSticky(false);
     };
-
-    const updateScrollbarColor = () => {
-      const serviceSlides = document.querySelector(".service-slides");
-      const scrollTop = window.scrollY;
-      const serviceSlidesTop = serviceSlides.offsetTop;
-      const scrollbarColor =
-        scrollTop >= serviceSlidesTop ? "white" : "transparent";
-
-      setScrollbarColor(scrollbarColor);
-    };
-
-    window.addEventListener("scroll", () => {
-      handleScroll();
-      updateScrollbarColor();
-    });
-
-    window.addEventListener("resize", () => {
-      handleScroll();
-      updateScrollbarColor();
-    });
-
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
-    updateScrollbarColor();
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", updateScrollbarColor);
     };
   }, []);
 
@@ -62,15 +38,11 @@ const Services = () => {
       <HeaderMobile />
       <ServiceHeader />
       <div className="services-container">
-        <div
-          className="services-scrollbar"
-          ref={scrollbarRef}
-          style={{ backgroundColor: scrollbarColor }}
-        >
-          <div className="inner-scrollbar" ref={innerScrollbarRef}></div>
-        </div>
         <div className="hidden-div"></div>
         <div className="service-slides">
+          <div className={`services-scrollbar ${sticky && "sticky-scrollbar"}`}>
+            <div className="inner-scrollbar" ref={innerScrollbarRef}></div>
+          </div>
           <ServiceSlides />
         </div>
         <div className="services-footer">

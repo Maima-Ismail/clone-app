@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import linkedin from "../../assets/icons/linkedin.svg";
+import facebook from "../../assets/icons/facebook.svg";
+import insta from "../../assets/icons/insta.svg";
 import arrow from "../../assets/arrow-right-white.png";
 import { Formik, Field, ErrorMessage } from "formik";
 import "./Footer.css";
@@ -113,9 +112,9 @@ export default Footer;
 export const Icons = ({ className }) => {
   return (
     <div className={className}>
-      <FontAwesomeIcon icon={faLinkedinIn} id="icon1" className="icon" />
-      <FontAwesomeIcon icon={faFacebookF} id="icon2" className="icon" />
-      <FontAwesomeIcon icon={faInstagram} id="icon3" className="icon" />
+      <img src={linkedin} alt="linkedin-icon" id="icon1" className="icon" />
+      <img src={facebook} alt="facebook-icon" id="icon2" className="icon" />
+      <img src={insta} alt="insta-icon" id="icon3" className="icon" />
     </div>
   );
 };

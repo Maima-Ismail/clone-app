@@ -8,11 +8,16 @@
   width: 100vw;
   top: 0;
   left: 0;
+  overflow-x: hidden;
 }
 
 .hidden-div {
   height: 100vh;
   background: transparent;
+}
+
+.service-slides {
+  display: flex;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .services-scrollbar {
@@ -24,37 +29,37 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
+  .service-slides {
+    position: relative;
+  }
   .services-scrollbar {
-    position: fixed;
+    position: absolute;
+    top: 0;
     background-color: rgb(255, 255, 255);
+    height: 100vh;
     width: 0.3rem;
     left: 4.4vw;
+    z-index: 100;
+  }
+
+  .sticky-scrollbar {
+    position: fixed;
   }
 
   .inner-scrollbar {
-    width: 0.3rem;
+    width: 100%;
     background-color: #07665e;
   }
 
   .services-footer {
     position: relative;
+    z-index: 150;
   }
 }
 @media (min-width: 1024px) {
   .services-scrollbar {
-    position: fixed;
-    background-color: rgb(255, 255, 255);
     width: 0.5rem;
     left: 5vw;
-  }
-
-  .inner-scrollbar {
-    width: 0.5rem;
-    background-color: #07665e;
-  }
-
-  .services-footer {
-    position: relative;
   }
 }

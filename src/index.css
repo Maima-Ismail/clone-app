@@ -1,11 +1,12 @@
 @font-face {
-  font-family: 'BanglaMNBold';
-  src: url('src/assets/font/bangla-mn.ttf');
+  font-family: "BanglaMNBold";
+  src: url("src/assets/font/bangla-mn.ttf");
 }
 
 body {
+  overflow-x: hidden;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   margin: 0px;
-  font-family: 'BanglaMNBold';
+  font-family: "BanglaMNBold";
 }

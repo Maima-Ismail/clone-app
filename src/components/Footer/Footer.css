@@ -69,8 +69,9 @@
 }
 
 .icon {
+  height: 1.5rem;
+  width: 1.5rem;
   padding-right: 1.5rem;
-  font-size: 1.3rem;
 }
 
 .form-error {
@@ -78,6 +79,16 @@
   font-size: 12px;
   padding-left: 1rem;
   padding-top: 1rem;
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+  .footer-container {
+    padding: 1.5rem;
+  }
+
+  .footer-form-input {
+    width: 10rem;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 639px) {
@@ -180,15 +191,6 @@
   }
 }
 
-@media (min-width: 0px) and (max-width: 375px){
-  .footer-container{
-    padding: 1.5rem;
-  }
-
-  .footer-form-input{
-    width: 10rem;
-  }
-}
 @media (min-width: 1024px) {
   .footer-icons {
     display: none;
@@ -213,10 +215,14 @@
   .footer-first-div {
     display: flex;
     flex-flow: row wrap;
+    flex-grow: 0.2;
+    min-width: 19rem;
+    max-width: 29rem;
+    justify-content: space-between;
   }
 
-  .footer-first-div div:first-child {
-    padding-right: 3rem;
+  .footer-services {
+    justify-content: end;
   }
 
   .footer-tos p:first-child {
@@ -229,15 +235,5 @@
 
   #icon3 {
     padding-right: 0;
-  }
-}
-
-@media (min-width: 1240px){
-  .footer-container {
-    padding: 5rem 8rem;
-  }
-
-  .footer-first-div div:first-child {
-    padding-right: 4rem;
   }
 }
