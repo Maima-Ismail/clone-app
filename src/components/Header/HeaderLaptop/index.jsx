@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/icons/logo.png";
 
 const HeaderLaptop = () => {
   const links = [
@@ -45,10 +46,22 @@ const HeaderLaptop = () => {
         ref={navbarRef}
       >
         <nav>
+          <div className={`laptop-logo  ${scrolling === -1 && "faded-text"}`}>
+            <Link to={"/"}>
+              <img src={logo} alt="logo" />
+              <p
+                className={`laptop-logo-text ${
+                  scrolling === 1 && "logo-black-text"
+                }`}
+              >
+                GrolTech
+              </p>
+            </Link>
+          </div>
           <ul
-            className={`laptop-nav-links ${
-              scrolling === -1 && "faded-nav-links"
-            } ${scrolling === 1 && "laptop-black-content"}`}
+            className={`laptop-nav-links ${scrolling === -1 && "faded-text"} ${
+              scrolling === 1 && "laptop-black-content"
+            }`}
           >
             {links.map((link, index) => (
               <li key={index}>

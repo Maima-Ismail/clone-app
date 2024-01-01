@@ -81,6 +81,11 @@
   padding-top: 1rem;
 }
 
+.footer-tos a {
+  text-decoration: none;
+  color: white;
+}
+
 @media (min-width: 0px) and (max-width: 375px) {
   .footer-container {
     padding: 1.5rem;
@@ -225,8 +230,12 @@
     justify-content: end;
   }
 
+  .footer-tos {
+    padding-top: 1rem;
+  }
+
   .footer-tos p:first-child {
-    line-height: 4rem;
+    line-height: 2rem;
   }
 
   .footer-tos p:nth-child(2) {

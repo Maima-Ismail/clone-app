@@ -1,6 +1,7 @@
 import linkedin from "../../assets/icons/linkedin.svg";
 import facebook from "../../assets/icons/facebook.svg";
 import insta from "../../assets/icons/insta.svg";
+import { Link } from "react-router-dom";
 import arrow from "../../assets/arrow-right-white.png";
 import { Formik, Field, ErrorMessage } from "formik";
 import "./Footer.css";
@@ -99,8 +100,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-tos">
-          <p className="h2">Terms of Services</p>
-          <p className="h2">Privacy Policy</p>
+          <Link to={"/terms-and-conditions"}>
+            <p className="h2">Terms and Services</p>
+          </Link>
+          <Link to={"/privacy-policy"}>
+            <p className="h2">Privacy Policy</p>
+          </Link>
         </div>
         <Icons className="footer-icons" />
       </div>

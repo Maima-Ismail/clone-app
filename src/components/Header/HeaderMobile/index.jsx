@@ -8,6 +8,7 @@ import cross from "../../../assets/icons/cross.svg";
 import crossBlack from "../../../assets/icons/cross-black.svg";
 import menu from "../../../assets/icons/menu.svg";
 import menuBlack from "../../../assets/icons/menu-black.svg";
+import logo from "../../../assets/icons/logo.png";
 
 const HeaderMobile = ({ isBlackIcon }) => {
   const links = [
@@ -93,6 +94,14 @@ const HeaderMobile = ({ isBlackIcon }) => {
 
   return (
     <>
+      <div className="logo">
+        <Link to={"/"}>
+          <img src={logo} alt="logo" />
+          <p className={`logo-text ${isBlackIcon && "logo-black-text"}`}>
+            GrolTech
+          </p>
+        </Link>
+      </div>
       <div className={`navbar ${scrolling && "scrolled"}`} ref={navbarRef}>
         <button type="button" onClick={openModal}>
           {isBlackIcon ? (
@@ -141,11 +150,13 @@ const HeaderMobile = ({ isBlackIcon }) => {
                     {link.subLinks && (
                       <ul className="services-nav-links">
                         <div className="sleek-line"></div>
-                        {link.subLinks.map((subLink, subIndex) => (
-                          <li key={subIndex}>
-                            <Link to={subLink.href}>{subLink.name}</Link>
-                          </li>
-                        ))}
+                        <div>
+                          {link.subLinks.map((subLink, subIndex) => (
+                            <li key={subIndex}>
+                              <Link to={subLink.href}>{subLink.name}</Link>
+                            </li>
+                          ))}
+                        </div>
                       </ul>
                     )}
                   </li>
