@@ -27,6 +27,7 @@ button {
 .menu-icon {
   height: 2.5rem;
   width: 2.5rem;
+  cursor: pointer;
 }
 
 .cross-icon {
@@ -35,6 +36,30 @@ button {
   right: 3rem;
   height: 2.5rem;
   width: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.logo-text {
+  display: inline;
+  color: white;
+  position: absolute;
+}
+
+.logo-black-text {
+  color: black;
+  font-weight: bold;
+}
+.logo img {
+  height: 3rem;
+  width: 3rem;
 }
 
 @media (max-width: 1023px) {
@@ -143,7 +168,9 @@ button {
 
   .services-nav-links {
     list-style: none;
-    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .services-nav-links li {
@@ -159,10 +186,8 @@ button {
   }
 
   .sleek-line {
-    position: absolute;
-    top: 11rem;
-    left: 15rem;
-    height: 11rem;
+    height: 8rem;
+    margin-right: 2rem;
     width: 0.01rem;
     background-color: rgb(150, 150, 150);
   }
