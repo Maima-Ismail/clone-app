@@ -4,6 +4,7 @@ import ContactPageImage from "../../assets/contactPageImage.png";
 import ContactSchema from "../../schemas/ContactSchema";
 import { Formik, Field, ErrorMessage } from "formik";
 import { useState } from "react";
+import axios from "axios";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -13,13 +14,17 @@ const Contact = () => {
   };
   const postData = async (values, action) => {
     setLoading(true);
-    await new Promise((resolve) => {
-      setTimeout(resolve, 2000);
-    });
-    console.log(values);
-    action.resetForm();
-    setLoading(false);
-    setShowModal(true);
+    try {
+      const res = await axios.post("/nowhere", values);
+    } catch (error) {
+      console.log(error);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+    } finally {
+      console.log(values);
+      action.resetForm();
+      setLoading(false);
+      setShowModal(true);
+    }
   };
 
   return (
