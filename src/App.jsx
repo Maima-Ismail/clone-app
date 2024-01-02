@@ -4,8 +4,7 @@ import Projects from "./pages/Projects/index";
 import ContactUs from "./pages/ContactUs/index";
 import Services from "./pages/Services";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import TermsServices from "./pages/Terms and Services";
-import PrivacyPolicy from "./pages/Privacy Policy";
+import TermsPolicyPage from "./pages/Terms and Policy Page";
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   {
@@ -22,11 +21,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/terms-and-conditions",
-    element: <TermsServices />,
+    element: <TermsPolicyPage />,
   },
   {
     path: "privacy-policy",
-    element: <PrivacyPolicy />,
+    element: <TermsPolicyPage />,
   },
 ]);
 function App() {
